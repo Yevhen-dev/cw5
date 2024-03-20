@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-left {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 306px;
+    min-height: 100vh;
+    padding: 38px 34px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 60px 0 #E2ECF950;
+}
+.nav-left__navigation li {
+    padding: 20px 0;
+}
+
+.nav-left__navigation a {
+    position: relative;
+    text-decoration: none;
+    color: #9197B3;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-left__navigation a::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../images/dashboard.svg);
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+.nav-left__navigation a::after {
+    position: absolute;
+    right: 0;
+    content: "";
+    display: inline-block;
+    background-image: url(../images/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+}
+.nav-left__navigation li:first-child a::after {
+    display: none;
+}
+.nav-left__navigation li:nth-child(2) a::before {
+    background-image: url(../images/product.svg);
+} 
+.nav-left__navigation li:nth-child(3) a::before {
+    background-image: url(../images/customers.svg);
+} 
+.nav-left__navigation li:nth-child(4) a::before {
+    background-image: url(../images/income.svg);
+} 
+.nav-left__navigation li:nth-child(5) a::before {
+    background-image: url(../images/promote.svg);
+} 
+.nav-left__navigation li:nth-child(6) a::before {
+    background-image: url(../images/help.svg);
+} 
+
+.nav-left__upgrade {
+    background: linear-gradient(90deg, #EAABF0 0, #4623E9 100%);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+.nav-left__upgrade p {
+    color: #ffffff;
+}
+.nav-left__upgrade a {
+    text-decoration: none;
+    color: #4925E9;
+    display: block;
+    padding: 5px 25px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+.nav-left__users-info {
+    padding-top: 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
